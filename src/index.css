@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* RESET--- */
+	* {
+		margin: 0;
+		padding: 0;
+		font-family: "Poppins", sans-serif;
+	}
+
+	/* CONTAINER--- */
+	.app-container {
+		@apply w-11/12 m-auto;
+	}
+
+	/* BACKGROUND-THEME--- */
+	.bg-theme {
+		background-image: linear-gradient(10deg, #ff4b1f, #1fddff);
+	}
+
+	/* FOOTER-THEME--- */
+	.bg-footer {
+		background-image: linear-gradient(2deg, #000000, #434343);
+	}
+
+	.bg-theme-cart {
+		@apply bg-gradient-to-b from-slate-900 to-gray-900 shadow-sm shadow-gray-900;
+	}
+
+	/* BLUR-EFFECT--- */
+	.blur-effect-theme {
+		@apply bg-[#68555f5f] bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 opacity-100 z-[100] shadow-sm shadow-[#1fddff] transition-all duration-300;
+	}
+
+	.cart-blur-effect-theme {
+		@apply bg-[#36e7e44e] bg-clip-padding backdrop-filter backdrop-blur bg-opacity-50 opacity-100 z-[100] shadow-sm shadow-[#ef090915] transition-all duration-300;
+	}
+
+	/* ICON STYLES--- */
+	.icon-style {
+		@apply h-6 w-6 sm:h-5 sm:w-5 text-slate-100 cursor-pointer transition-all duration-100 active:scale-110 leading-tight;
+	}
+
+	/* TEXT-GRADIENT--- */
+	.text-gradient {
+		@apply text-transparent bg-clip-text bg-gradient-to-tr from-blue-500 to-sky-500;
+	}
+
+	/* BORDER--- */
+	.rounded-theme {
+		border-radius: 5% 100% 10% 5%;
+	}
+
+	/* BUTTON--- */
+	.button-theme {
+		@apply px-7 py-1 rounded active:scale-90 transition-all duration-100 ease-in-out shadow-md sm:text-sm;
+	}
+
+	/* TRANSITIONS-THEME --- */
+	.transitions-theme {
+		@apply transition-all duration-700 ease-in-out cursor-pointer;
+	}
+
+	/* SCROLL BAR---  */
+	::-webkit-scrollbar {
+		display: none;
+	}
+}
