@@ -1,6 +1,6 @@
 # Sneakershelf
 
-This project is the frontend part of an e-commerce site for sneakers, built using React and Tailwind CSS. With a modern design and responsive layout.
+This project is the frontend part of an e-commerce site for sneakers, built using React and Tailwind CSS With a modern UI and responsive layout.
 
 ## Features
 
